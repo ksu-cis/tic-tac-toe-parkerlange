@@ -40,7 +40,7 @@ function declareWinner() {
 function checkForWin() {
     // check rows
     for (var i = 0; i < 9; i += 3) {
-        if (squares[i].innerText && squares[i + 0].innerText === squares.[i + 1].innerText && squares[i + 1].innerText === squares[i + 2].innerText) {
+        if (squares[i].innerText && squares[i + 0].innerText === squares[i + 1].innerText && squares[i + 1].innerText === squares[i + 2].innerText) {
             declareWinner();
             return true;
         }
@@ -48,7 +48,7 @@ function checkForWin() {
 
     // check columns
     for (var j = 0; j < 3; j += 1) {
-        if (squares[i].innerText && squares[j].innerText === squares.[j + 3].innerText && squares[j + 3].innerText === squares[j + 6].innerText) {
+        if (squares[i].innerText && squares[j].innerText === squares[j + 3].innerText && squares[j + 3].innerText === squares[j + 6].innerText) {
             declareWinner();
             return true;
         }
